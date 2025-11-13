@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>wrike_take_home</title>
+<title>Table of Contents</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -83,9 +83,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Table of Contents</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Hello, and welcome to the Wrike Take Home task made by Emin Alizada.</p>
+<p>You can simply click on the headings and move to the task results.</p>
+<p>I have also tried to add explanations and showcase my process as thoroughly as possible.</p>
+<ul>
+<li><a href="#task-1">Task 1</a></li>
+<li><a href="#task-2">Task 2</a></li>
+<li><a href="#task-3">Task 3</a></li>
+</ul>
+<section id="task-1" class="level1">
+<h1>Task 1</h1>
 <p>Results:</p>
 <ol type="1">
 <li>ROI for Italy campaigns is: <strong>-6.18%</strong></li>
@@ -139,11 +165,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </figure>
 </div>
 </section>
-<section id="process---code" class="level1">
-<h1>Process - Code</h1>
-<section id="step-1-import-files" class="level2">
-<h2 class="anchored" data-anchor-id="step-1-import-files">Step 1: Import files</h2>
-<div id="3d4fbaba" class="cell" data-execution_count="1">
+<section id="process---code" class="level2">
+<h2 class="anchored" data-anchor-id="process---code">Process - Code</h2>
+<section id="step-1-import-files" class="level3">
+<h3 class="anchored" data-anchor-id="step-1-import-files">Step 1: Import files</h3>
+<div id="3d4fbaba" class="cell" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>path <span class="op">=</span> <span class="vs">r"C:</span><span class="er">\</span><span class="vs">Users</span><span class="dv">\A</span><span class="vs">SUS</span><span class="dv">\D</span><span class="vs">ocuments</span><span class="er">\</span><span class="vs">lead_gen_test_task__</span><span class="kw">(</span><span class="vs">2</span><span class="kw">)</span><span class="vs">_</span><span class="kw">(</span><span class="vs">2</span><span class="kw">)</span><span class="vs">_</span><span class="kw">(</span><span class="vs">1</span><span class="kw">)</span><span class="dv">.</span><span class="vs">xlsx"</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -151,22 +177,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>df2 <span class="op">=</span> pd.read_excel(path, sheet_name<span class="op">=</span><span class="st">'sheet2'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
-<section id="step-2-separate-visitors-leads-and-customers" class="level2">
-<h2 class="anchored" data-anchor-id="step-2-separate-visitors-leads-and-customers">Step 2: Separate visitors, leads and customers</h2>
+<section id="step-2-separate-visitors-leads-and-customers" class="level3">
+<h3 class="anchored" data-anchor-id="step-2-separate-visitors-leads-and-customers">Step 2: Separate visitors, leads and customers</h3>
 <div id="7fa0a980" class="cell" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>df_minutes <span class="op">=</span> df2[df2[<span class="st">'lead_type'</span>] <span class="op">==</span> <span class="st">'3_minutes'</span>]</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>df_customer <span class="op">=</span> df2[df2[<span class="st">'lead_type'</span>] <span class="op">==</span> <span class="st">'customer'</span>]</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>df_lead <span class="op">=</span> df2[df2[<span class="st">'lead_type'</span>] <span class="op">==</span> <span class="st">'lead'</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
-<section id="step-3-merge-customer-data-to-the-original-spreadsheet" class="level2">
-<h2 class="anchored" data-anchor-id="step-3-merge-customer-data-to-the-original-spreadsheet">Step 3: Merge customer data to the original spreadsheet</h2>
+<section id="step-3-merge-customer-data-to-the-original-spreadsheet" class="level3">
+<h3 class="anchored" data-anchor-id="step-3-merge-customer-data-to-the-original-spreadsheet">Step 3: Merge customer data to the original spreadsheet</h3>
 <div id="d273ce7f" class="cell" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>df_merged <span class="op">=</span> pd.merge(df, df_customer[[<span class="st">'uid'</span>, <span class="st">'lead_type'</span>]], on<span class="op">=</span><span class="st">'uid'</span>, how<span class="op">=</span><span class="st">'left'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
-<section id="step-4-add-format-data-to-include-amounts-0-for-non-customer-9.8-for-customer" class="level2">
-<h2 class="anchored" data-anchor-id="step-4-add-format-data-to-include-amounts-0-for-non-customer-9.8-for-customer">Step 4: Add format data to include $ amounts (0 for non-customer, 9.8 for customer)</h2>
+<section id="step-4-add-format-data-to-include-amounts-0-for-non-customer-9.8-for-customer" class="level3">
+<h3 class="anchored" data-anchor-id="step-4-add-format-data-to-include-amounts-0-for-non-customer-9.8-for-customer">Step 4: Add format data to include $ amounts (0 for non-customer, 9.8 for customer)</h3>
 <div id="bd816ead" class="cell" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -179,8 +205,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="0d262948" class="cell" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>df_merged.rename(columns<span class="op">=</span>{<span class="st">'lead_type'</span>: <span class="st">'revenue'</span>}, inplace<span class="op">=</span><span class="va">True</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<section id="italy-roi" class="level3">
-<h3 class="anchored" data-anchor-id="italy-roi">Italy ROI</h3>
+<section id="italy-roi" class="level4">
+<h4 class="anchored" data-anchor-id="italy-roi">Italy ROI</h4>
 <div id="17c0b342" class="cell" data-execution_count="51">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>df_italy <span class="op">=</span> df_merged[df_merged[<span class="st">'country'</span>] <span class="op">==</span> <span class="st">' IT'</span>]</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>italy_rev <span class="op">=</span> df_italy[<span class="st">'revenue'</span>].<span class="bu">sum</span>()</span>
@@ -192,8 +218,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="us-dmb-roi" class="level3">
-<h3 class="anchored" data-anchor-id="us-dmb-roi">US DMB ROI</h3>
+<section id="us-dmb-roi" class="level4">
+<h4 class="anchored" data-anchor-id="us-dmb-roi">US DMB ROI</h4>
 <div id="4796f2e6" class="cell" data-execution_count="50">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>df_us_dbm <span class="op">=</span> df_merged[(df_merged[<span class="st">'country'</span>] <span class="op">==</span> <span class="st">' US'</span>)]</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>df_us_dbm <span class="op">=</span> df_us_dbm[df_us_dbm[<span class="st">'campaign'</span>] <span class="op">==</span> <span class="st">'DBM '</span>]</span>
@@ -207,8 +233,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </section>
 </section>
-<section id="step-5-create-summary-sheet" class="level2">
-<h2 class="anchored" data-anchor-id="step-5-create-summary-sheet">Step 5: Create summary sheet</h2>
+<section id="step-5-create-summary-sheet" class="level3">
+<h3 class="anchored" data-anchor-id="step-5-create-summary-sheet">Step 5: Create summary sheet</h3>
 <div id="c785a53c" class="cell" data-execution_count="6">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>summary <span class="op">=</span> (</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>    df_merged</span>
@@ -384,8 +410,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="step-6-create-heatmaps-of-roi-revenue-and-cost" class="level2">
-<h2 class="anchored" data-anchor-id="step-6-create-heatmaps-of-roi-revenue-and-cost">Step 6: Create heatmaps of ROI, Revenue and Cost</h2>
+<section id="step-6-create-heatmaps-of-roi-revenue-and-cost" class="level3">
+<h3 class="anchored" data-anchor-id="step-6-create-heatmaps-of-roi-revenue-and-cost">Step 6: Create heatmaps of ROI, Revenue and Cost</h3>
 <div id="b13e99ec" class="cell" data-execution_count="7">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
@@ -434,6 +460,401 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
+</section>
+</section>
+</section>
+<section id="task-2" class="level1">
+<h1>Task 2</h1>
+<p>Headlines:</p>
+<ul>
+<li>No Code Process Management</li>
+<li>Automate Processes - No Effort</li>
+<li>Low Code Business Automation</li>
+</ul>
+<p>Descriptions:</p>
+<ul>
+<li>Workflow automation that replaces manual tasks | Wrike</li>
+<li>Save Time on Repetitive Tasks, Set Process Guardrails, &amp; Preserve Operational Costs</li>
+<li>Enjoy 360° visibility, seamless collaboration, and the freedom to let work flow</li>
+</ul>
+<section id="campaign-setup" class="level3">
+<h3 class="anchored" data-anchor-id="campaign-setup">Campaign setup</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 30%">
+<col style="width: 36%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Campaign</th>
+<th>Bidding</th>
+<th>Ad group</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Business Automation Software - US - 13.11.2025</td>
+<td>Clicks==&gt;Conversion</td>
+<td>US - State<br><br>Locations - Washington, New York, California, Texas, Florida<br>* Exclude cities from the other ad group</td>
+</tr>
+<tr class="even">
+<td>Business Automation Software - US - 13.11.2025</td>
+<td>Clicks==&gt;Conversion</td>
+<td>US - Cities<br><br>Locations - Seattle, New York, New Jersey, Los Angeles, Houston, Phoenix, Tampa, San Jose, San Diego, Denver, Dallas, Chicago, Cleveland, Minneapolis</td>
+</tr>
+<tr class="odd">
+<td>Business Automation Software - US - 13.11.2025</td>
+<td>Clicks==&gt;Conversion</td>
+<td>US - Broad<br><br>Locations - Broad</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="answers-to-questions" class="level3">
+<h3 class="anchored" data-anchor-id="answers-to-questions">Answers to questions</h3>
+<section id="how-do-you-build-campaigns-and-whats-your-approach-to-keyword-collection-clusterization-and-campaign-structure" class="level4">
+<h4 class="anchored" data-anchor-id="how-do-you-build-campaigns-and-whats-your-approach-to-keyword-collection-clusterization-and-campaign-structure"><strong>How do you build campaigns and what’s your approach to keyword collection, clusterization and campaign structure?</strong></h4>
+<p>I start from the seed keyword and use <strong>Google Ads Diagnostics</strong> and then look it up on Ads transparency center, <strong>Keyword Planner</strong> and <strong>Organic Search</strong> results.</p>
+</section>
+<section id="how-do-you-generate-ideas-for-campaigns-based-on-the-given-topic-and-how-do-you-implement-them" class="level4">
+<h4 class="anchored" data-anchor-id="how-do-you-generate-ideas-for-campaigns-based-on-the-given-topic-and-how-do-you-implement-them"><strong>How do you generate ideas for campaigns based on the given topic and how do you implement them?</strong></h4>
+<p>Ads transparency center is a great place to start from. If the competition is really tough I look at Trustpilot reviews to see main pain points and incorporate them into the headlines.</p>
+</section>
+<section id="whats-your-understanding-on-how-campaigns-should-be-built" class="level4">
+<h4 class="anchored" data-anchor-id="whats-your-understanding-on-how-campaigns-should-be-built"><strong>What’s your understanding on how campaigns should be built?</strong></h4>
+<p>I believe campaigns should start fairly minimal and it should get updated/optimized on a daily basis. I usually treat the first 20% of the budget/time for training Google Ads’ AI model and figuring out what kind of keywords drive clicks.</p>
+<p>In my standard process, I start with maximize click for a week or two, find out winner search impressions and locations, then make a big change and move into maximize conversions. Yes you lose a bit of steam, but it is worth it IMO.</p>
+<p>I also tend to set up a broad ad group with no locations and all broad keyword types with 10-15% of the whole budget of the campaign, to see what Google comes up with.</p>
+</section>
+<section id="wed-like-to-receive-an-explanation-on-each-of-the-major-steps-in-the-campaign-creation-process---whats-the-logic-behind-this-why-did-you-decide-to-structure-the-campaign-in-the-following-way-why-do-you-think-its-more-efficient-than-other-approaches." class="level4">
+<h4 class="anchored" data-anchor-id="wed-like-to-receive-an-explanation-on-each-of-the-major-steps-in-the-campaign-creation-process---whats-the-logic-behind-this-why-did-you-decide-to-structure-the-campaign-in-the-following-way-why-do-you-think-its-more-efficient-than-other-approaches."><strong>We’d like to receive an explanation on each of the major steps in the campaign creation process - what’s the logic behind this, why did you decide to structure the campaign in the following way, why do you think it’s more efficient than other approaches.</strong></h4>
+<p>In my experience there are some major locations, well known by all, in which you can get pretty good results. That’s why I always limit to top 20 cities and create an ad group for them. Then I have seen that sometimes Google suprises you, so I usually set up state wide ad groups to see which locations work best.</p>
+<p>For keyword selection, broad keywords are generally cheaper, however the quality of results are really bad, so I use them for testing and finding new ideas. I usually reduce the budget gradually and try to limit the total ad spend to <strong>$500</strong>.</p>
+<p>I believe in the constant experimentation and optimization philosophy, so intead of making grand strategies and dedicated plans, I try to have a minimum viable ad setup, and continually optimize it.</p>
+</section>
+</section>
+<section id="keywords-table" class="level3">
+<h3 class="anchored" data-anchor-id="keywords-table">Keywords table</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 5%">
+<col style="width: 17%">
+<col style="width: 22%">
+<col style="width: 22%">
+<col style="width: 22%">
+<col style="width: 8%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Keyword</th>
+<th>Avg. monthly searches</th>
+<th>Competition (indexed value)</th>
+<th>Top of page bid (low range)</th>
+<th>Top of page bid (high range)</th>
+<th>Match type</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>legal workflow management software</td>
+<td>500</td>
+<td>11</td>
+<td>45.58</td>
+<td>91.8</td>
+<td>Phrase</td>
+</tr>
+<tr class="even">
+<td>project workflow software</td>
+<td>500</td>
+<td>17</td>
+<td>20.47</td>
+<td>80</td>
+<td>Phrase</td>
+</tr>
+<tr class="odd">
+<td>process workflow software</td>
+<td>500</td>
+<td>10</td>
+<td>18.42</td>
+<td>78.35</td>
+<td>Phrase</td>
+</tr>
+<tr class="even">
+<td>workflow project management software</td>
+<td>500</td>
+<td>22</td>
+<td>9.79</td>
+<td>77.8</td>
+<td>Phrase</td>
+</tr>
+<tr class="odd">
+<td>project management workflow tools</td>
+<td>500</td>
+<td>22</td>
+<td>9.79</td>
+<td>77.8</td>
+<td>Phrase</td>
+</tr>
+<tr class="even">
+<td>best workflow management systems</td>
+<td>500</td>
+<td>25</td>
+<td>20.59</td>
+<td>67.99</td>
+<td>Exact</td>
+</tr>
+<tr class="odd">
+<td>workflow process automation</td>
+<td>500</td>
+<td>36</td>
+<td>14.34</td>
+<td>67.38</td>
+<td>Phrase</td>
+</tr>
+<tr class="even">
+<td>construction project management workflow</td>
+<td>500</td>
+<td>18</td>
+<td>15.6</td>
+<td>59.08</td>
+<td>Phrase</td>
+</tr>
+<tr class="odd">
+<td>construction management workflow</td>
+<td>500</td>
+<td>22</td>
+<td>7.13</td>
+<td>56.8</td>
+<td>Phrase</td>
+</tr>
+<tr class="even">
+<td>business workflow software</td>
+<td>500</td>
+<td>22</td>
+<td>7.13</td>
+<td>56.8</td>
+<td>Phrase</td>
+</tr>
+<tr class="odd">
+<td>enterprise workflow software</td>
+<td>500</td>
+<td>7</td>
+<td>16.71</td>
+<td>55.7</td>
+<td>Exact</td>
+</tr>
+<tr class="even">
+<td>low code process automation</td>
+<td>5000</td>
+<td>10</td>
+<td>13</td>
+<td>53.73</td>
+<td>Broad</td>
+</tr>
+<tr class="odd">
+<td>workflow optimization software</td>
+<td>5000</td>
+<td>10</td>
+<td>13</td>
+<td>53.73</td>
+<td>Broad</td>
+</tr>
+<tr class="even">
+<td>business workflow software</td>
+<td>500</td>
+<td>17</td>
+<td>13.39</td>
+<td>53.27</td>
+<td>Phrase</td>
+</tr>
+<tr class="odd">
+<td>enterprise workflow software</td>
+<td>500</td>
+<td>17</td>
+<td>13.39</td>
+<td>53.27</td>
+<td>Phrase</td>
+</tr>
+<tr class="even">
+<td>business workflow management software</td>
+<td>500</td>
+<td>17</td>
+<td>13.39</td>
+<td>53.27</td>
+<td>Exact</td>
+</tr>
+<tr class="odd">
+<td>business process automation tools</td>
+<td>500</td>
+<td>16</td>
+<td>16.74</td>
+<td>50.54</td>
+<td>Exact</td>
+</tr>
+<tr class="even">
+<td>workflow automation for small business</td>
+<td>500</td>
+<td>20</td>
+<td>21.22</td>
+<td>49.93</td>
+<td>Exact</td>
+</tr>
+<tr class="odd">
+<td>business process automation software</td>
+<td>5000</td>
+<td>3</td>
+<td>16.76</td>
+<td>44.43</td>
+<td>Exact</td>
+</tr>
+<tr class="even">
+<td>workflow and task management software</td>
+<td>500</td>
+<td>11</td>
+<td>3.15</td>
+<td>43.03</td>
+<td>Broad</td>
+</tr>
+<tr class="odd">
+<td>ai business process automation</td>
+<td>500</td>
+<td>19</td>
+<td>13.4</td>
+<td>37.52</td>
+<td>Broad</td>
+</tr>
+<tr class="even">
+<td>construction project workflow</td>
+<td>500</td>
+<td>31</td>
+<td>5.53</td>
+<td>32.94</td>
+<td>Broad</td>
+</tr>
+<tr class="odd">
+<td>process and workflow management</td>
+<td>500</td>
+<td>4</td>
+<td>12.28</td>
+<td>31.48</td>
+<td>Broad</td>
+</tr>
+<tr class="even">
+<td>document workflow automation</td>
+<td>500</td>
+<td>18</td>
+<td>12.95</td>
+<td>27.74</td>
+<td>Broad</td>
+</tr>
+<tr class="odd">
+<td>smartsheet workflow</td>
+<td>500</td>
+<td>26</td>
+<td>5.53</td>
+<td>27.48</td>
+<td>Broad</td>
+</tr>
+<tr class="even">
+<td>construction workflow software</td>
+<td>500</td>
+<td>4</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>Broad</td>
+</tr>
+<tr class="odd">
+<td>crm and workflow management</td>
+<td>500</td>
+<td>6</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>Broad</td>
+</tr>
+<tr class="even">
+<td>low code process automation</td>
+<td>500</td>
+<td>5</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>Phrase</td>
+</tr>
+<tr class="odd">
+<td>it process automation software</td>
+<td>500</td>
+<td>6</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>Exact</td>
+</tr>
+<tr class="even">
+<td>workflow optimization software</td>
+<td>500</td>
+<td>2</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>Phrase</td>
+</tr>
+<tr class="odd">
+<td>business process automation solutions</td>
+<td>500</td>
+<td>2</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>Broad</td>
+</tr>
+<tr class="even">
+<td>construction workflow management software</td>
+<td>500</td>
+<td>4</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>Exact</td>
+</tr>
+<tr class="odd">
+<td>business process management automation</td>
+<td>500</td>
+<td>0</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>Exact</td>
+</tr>
+<tr class="even">
+<td>low code business process automation</td>
+<td>500</td>
+<td>1</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>Exact</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="task-3" class="level1">
+<h1>Task 3</h1>
+<p><strong>Email:</strong></p>
+<p>Subject: Clarification on Cost Structure and Proposal for a More Transparent Model</p>
+<p>Hi [Name],</p>
+<p>Thank you again for sharing the details of your proposal. We appreciate the time and effort your team has put into this, and we see strong potential for a long-term partnership.</p>
+<p>After reviewing the numbers on our side, I wanted to share a quick comparison for context. Based on our current performance:</p>
+<p>1,000 impressions → 60 visitors → ~1.2 purchasers</p>
+<p>Total cost: ~$6.00</p>
+<p>Effective CPM: ~$6.00</p>
+<p>In your proposal, the CPM offered is $8.00, which is noticeably higher than what we are effectively paying today.</p>
+<p>While CPM is a standard pricing model, it can be challenging for us to validate the value accurately, since impressions alone don’t directly reflect customer actions such as visits and purchases. This is why a CPA (cost per acquisition) model is much more transparent and stable for us — it allows us to directly measure outcomes and ensures both sides benefit fairly from real customer conversions.</p>
+<p>We genuinely believe this keeps the partnership win-win, as:</p>
+<p>you are rewarded for actual results delivered,</p>
+<p>we retain visibility and predictability on customer acquisition costs, and</p>
+<p>both sides remain aligned on efficiency and performance.</p>
+<p>That said, if moving forward with a CPA model is not possible on your side, we would be open to discussing a CPM structure in the range of $4.5–5.0. This pricing band would help balance the risks on our end, especially given the fluctuations that naturally occur in CTR and conversion rates. It also ensures we can maintain sustainable performance levels while still progressing our partnership.</p>
+<p>I’d be happy to review this together on a quick call if that works for you. We are very open to finding a model that supports both teams fairly.</p>
+<p>Best regards, Emin Alizada Paid search team @ Wrike</p>
+<section id="reasoning" class="level2">
+<h2 class="anchored" data-anchor-id="reasoning">Reasoning</h2>
+<p>We currently have 6% CTR and 2% conversion rate, meaning from 1000 impressions who saw the banner we are making at around 1.2 sales (1000 x 0.06 x 0.02). With the current CPA model we are paying $6 for this 1.2 sales, meaning our effective CPM is $6. What they offer is $8 for CPM, which is 33% increase in CPM with no guarantee in results.</p>
+<p>In current context, $6 for CPM is the bare minimum, and ideally, having more wiggle room for the risk we are taking should be included in the proposal. Therefore I believe $4.5 for CPM is a good price we can agree upon.</p>
 </section>
 </section>
 

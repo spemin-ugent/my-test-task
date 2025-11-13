@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.24">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>wrike_take_home</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script><script src="wrike_take_home_files/libs/clipboard/clipboard.min.js"></script>
+<script src="wrike_take_home_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="wrike_take_home_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="wrike_take_home_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="wrike_take_home_files/libs/quarto-html/popper.min.js"></script>
+<script src="wrike_take_home_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="wrike_take_home_files/libs/quarto-html/anchor.min.js"></script>
+<link href="wrike_take_home_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="wrike_take_home_files/libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="wrike_take_home_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="wrike_take_home_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="wrike_take_home_files/libs/bootstrap/bootstrap-7416f59753bf0ba0a3e8430fe336e89f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.min.js" integrity="sha384-c9c+LnTbwQ3aujuU7ULEPVvgLs+Fn6fJUvIGTsuu1ZcCf11fiEubah0ttpca4ntM sha384-6V1/AdqZRWk1KAlWbKBlGhN7VG4iE/yAZcO6NZPMF8od0vukrvr0tg4qY6NSrItx" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+
+</head>
+
+<body class="fullcontent quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+
+
+
+<p>Results:</p>
+<ol type="1">
+<li>ROI for Italy campaigns is: <strong>-6.18%</strong></li>
+<li>ROI for US DBM campaigns is: <strong>-34.60%</strong></li>
+</ol>
+<section id="recommendations" class="level2">
+<h2 class="anchored" data-anchor-id="recommendations">Recommendations</h2>
+<p>It seems that despite high spending in the US, it is one of the most unprofitable markets, while Netherlands and Russia has better overall results.</p>
+<p>We can see that DBMs do not drive that many conversions (the target might be inbound marketing via email or other), while search has overall best results.</p>
+<p>Therefore, <strong>strictly from conversion</strong> POV, I would do the following:</p>
+<ol type="1">
+<li>Shift around 30% of the budget from RT to Search.</li>
+<li>Suggest reducing DBM budget even further and even consider stopping it.</li>
+<li>Move on to country targeting.</li>
+</ol>
+<p>I would <strong>prioritize</strong> countries like this:</p>
+<ol type="1">
+<li><strong>Netherlands</strong> - Best results so far, easy to localize content. <strong>Focus on Search and RT ads</strong>.</li>
+<li><strong>Russia</strong> - Second best results, hard to localize but worth the shot. <strong>Focus on search ads</strong>.</li>
+</ol>
+</section>
+<section id="process-overview" class="level2">
+<h2 class="anchored" data-anchor-id="process-overview">Process overview:</h2>
+<ol type="1">
+<li>Filtering out customers in the spreadsheet</li>
+<li>Combining files based on the uid</li>
+<li>Summarizing revenue &amp; costs</li>
+<li>Breaking down based on the campaign &amp; country</li>
+<li>Ordering based on revenue</li>
+<li>Analyzing data and decision making</li>
+</ol>
+</section>
+<section id="images" class="level2">
+<h2 class="anchored" data-anchor-id="images">Images</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="wrike_take_home_files/figure-html/bf8f6757-3-image.png" class="img-fluid figure-img"></p>
+<figcaption>image.png</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="wrike_take_home_files/figure-html/bf8f6757-1-image-2.png" class="img-fluid figure-img"></p>
+<figcaption>image-2.png</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="wrike_take_home_files/figure-html/bf8f6757-2-image-3.png" class="img-fluid figure-img"></p>
+<figcaption>image-3.png</figcaption>
+</figure>
+</div>
+</section>
+<section id="process---code" class="level1">
+<h1>Process - Code</h1>
+<section id="step-1-import-files" class="level2">
+<h2 class="anchored" data-anchor-id="step-1-import-files">Step 1: Import files</h2>
+<div id="3d4fbaba" class="cell" data-execution_count="1">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>path <span class="op">=</span> <span class="vs">r"C:</span><span class="er">\</span><span class="vs">Users</span><span class="dv">\A</span><span class="vs">SUS</span><span class="dv">\D</span><span class="vs">ocuments</span><span class="er">\</span><span class="vs">lead_gen_test_task__</span><span class="kw">(</span><span class="vs">2</span><span class="kw">)</span><span class="vs">_</span><span class="kw">(</span><span class="vs">2</span><span class="kw">)</span><span class="vs">_</span><span class="kw">(</span><span class="vs">1</span><span class="kw">)</span><span class="dv">.</span><span class="vs">xlsx"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_excel(path)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>df2 <span class="op">=</span> pd.read_excel(path, sheet_name<span class="op">=</span><span class="st">'sheet2'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="step-2-separate-visitors-leads-and-customers" class="level2">
+<h2 class="anchored" data-anchor-id="step-2-separate-visitors-leads-and-customers">Step 2: Separate visitors, leads and customers</h2>
+<div id="7fa0a980" class="cell" data-execution_count="2">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>df_minutes <span class="op">=</span> df2[df2[<span class="st">'lead_type'</span>] <span class="op">==</span> <span class="st">'3_minutes'</span>]</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>df_customer <span class="op">=</span> df2[df2[<span class="st">'lead_type'</span>] <span class="op">==</span> <span class="st">'customer'</span>]</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>df_lead <span class="op">=</span> df2[df2[<span class="st">'lead_type'</span>] <span class="op">==</span> <span class="st">'lead'</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="step-3-merge-customer-data-to-the-original-spreadsheet" class="level2">
+<h2 class="anchored" data-anchor-id="step-3-merge-customer-data-to-the-original-spreadsheet">Step 3: Merge customer data to the original spreadsheet</h2>
+<div id="d273ce7f" class="cell" data-execution_count="3">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>df_merged <span class="op">=</span> pd.merge(df, df_customer[[<span class="st">'uid'</span>, <span class="st">'lead_type'</span>]], on<span class="op">=</span><span class="st">'uid'</span>, how<span class="op">=</span><span class="st">'left'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="step-4-add-format-data-to-include-amounts-0-for-non-customer-9.8-for-customer" class="level2">
+<h2 class="anchored" data-anchor-id="step-4-add-format-data-to-include-amounts-0-for-non-customer-9.8-for-customer">Step 4: Add format data to include $ amounts (0 for non-customer, 9.8 for customer)</h2>
+<div id="bd816ead" class="cell" data-execution_count="4">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>df_merged[<span class="st">'lead_type'</span>] <span class="op">=</span> np.where(</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    df_merged[<span class="st">'lead_type'</span>] <span class="op">==</span> <span class="st">'customer'</span>,</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="fl">9.8</span>,</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    <span class="dv">0</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="0d262948" class="cell" data-execution_count="5">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>df_merged.rename(columns<span class="op">=</span>{<span class="st">'lead_type'</span>: <span class="st">'revenue'</span>}, inplace<span class="op">=</span><span class="va">True</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<section id="italy-roi" class="level3">
+<h3 class="anchored" data-anchor-id="italy-roi">Italy ROI</h3>
+<div id="17c0b342" class="cell" data-execution_count="51">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>df_italy <span class="op">=</span> df_merged[df_merged[<span class="st">'country'</span>] <span class="op">==</span> <span class="st">' IT'</span>]</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>italy_rev <span class="op">=</span> df_italy[<span class="st">'revenue'</span>].<span class="bu">sum</span>()</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>italy_cost <span class="op">=</span> df_italy[<span class="st">'cost'</span>].<span class="bu">sum</span>()</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>italy_roi <span class="op">=</span> (italy_rev <span class="op">-</span> italy_cost) <span class="op">/</span> italy_cost</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"ROI for Italy campaigns is: </span><span class="sc">{</span>italy_roi<span class="sc">:.2%}</span><span class="ss">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>ROI for Italy campaigns is: -6.18%</code></pre>
+</div>
+</div>
+</section>
+<section id="us-dmb-roi" class="level3">
+<h3 class="anchored" data-anchor-id="us-dmb-roi">US DMB ROI</h3>
+<div id="4796f2e6" class="cell" data-execution_count="50">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>df_us_dbm <span class="op">=</span> df_merged[(df_merged[<span class="st">'country'</span>] <span class="op">==</span> <span class="st">' US'</span>)]</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>df_us_dbm <span class="op">=</span> df_us_dbm[df_us_dbm[<span class="st">'campaign'</span>] <span class="op">==</span> <span class="st">'DBM '</span>]</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>us_dbm_rev <span class="op">=</span> (df_us_dbm[<span class="st">'revenue'</span>].<span class="bu">sum</span>())</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>us_dbm_cost <span class="op">=</span> (df_us_dbm[<span class="st">'cost'</span>].<span class="bu">sum</span>())</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>us_dbm_roi <span class="op">=</span> (us_dbm_rev <span class="op">-</span> us_dbm_cost) <span class="op">/</span> us_dbm_cost</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"ROI for US DBM campaigns is: </span><span class="sc">{</span>us_dbm_roi<span class="sc">:.2%}</span><span class="ss">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>ROI for US DBM campaigns is: -34.60%</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="step-5-create-summary-sheet" class="level2">
+<h2 class="anchored" data-anchor-id="step-5-create-summary-sheet">Step 5: Create summary sheet</h2>
+<div id="c785a53c" class="cell" data-execution_count="6">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>summary <span class="op">=</span> (</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>    df_merged</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>    .groupby([<span class="st">'country'</span>, <span class="st">'campaign'</span>], as_index<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>    .agg(</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>        revenue<span class="op">=</span>(<span class="st">'revenue'</span>, <span class="st">'sum'</span>),</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>        cost<span class="op">=</span>(<span class="st">'cost'</span>, <span class="st">'sum'</span>),</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>        roi<span class="op">=</span>(<span class="st">'revenue'</span>, <span class="kw">lambda</span> x: <span class="va">None</span>),</span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>        roas<span class="op">=</span>(<span class="st">'revenue'</span>, <span class="kw">lambda</span> x: <span class="va">None</span>)</span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>summary[<span class="st">'roi'</span>] <span class="op">=</span> (summary[<span class="st">'revenue'</span>] <span class="op">-</span> summary[<span class="st">'cost'</span>]) <span class="op">/</span> summary[<span class="st">'cost'</span>]</span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>summary[<span class="st">'roas'</span>] <span class="op">=</span> summary[<span class="st">'revenue'</span>] <span class="op">/</span> summary[<span class="st">'cost'</span>]</span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>summary.sort_values(by<span class="op">=</span><span class="st">'revenue'</span>, ascending<span class="op">=</span><span class="va">False</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display" data-execution_count="6">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">country</th>
+<th data-quarto-table-cell-role="th">campaign</th>
+<th data-quarto-table-cell-role="th">revenue</th>
+<th data-quarto-table-cell-role="th">cost</th>
+<th data-quarto-table-cell-role="th">roi</th>
+<th data-quarto-table-cell-role="th">roas</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">8</th>
+<td>RU</td>
+<td>SEARCH</td>
+<td>1264.2</td>
+<td>896.50</td>
+<td>0.410151</td>
+<td>1.410151</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">5</th>
+<td>NL</td>
+<td>SEARCH</td>
+<td>1038.8</td>
+<td>662.60</td>
+<td>0.567763</td>
+<td>1.567763</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">7</th>
+<td>RU</td>
+<td>RT</td>
+<td>989.8</td>
+<td>1055.50</td>
+<td>-0.062245</td>
+<td>0.937755</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">10</th>
+<td>UK</td>
+<td>RT</td>
+<td>970.2</td>
+<td>936.45</td>
+<td>0.036040</td>
+<td>1.036040</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">11</th>
+<td>UK</td>
+<td>SEARCH</td>
+<td>931.0</td>
+<td>852.25</td>
+<td>0.092402</td>
+<td>1.092402</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">13</th>
+<td>US</td>
+<td>RT</td>
+<td>921.2</td>
+<td>1226.30</td>
+<td>-0.248797</td>
+<td>0.751203</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">4</th>
+<td>NL</td>
+<td>RT</td>
+<td>901.6</td>
+<td>679.60</td>
+<td>0.326663</td>
+<td>1.326663</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">14</th>
+<td>US</td>
+<td>SEARCH</td>
+<td>891.8</td>
+<td>922.25</td>
+<td>-0.033017</td>
+<td>0.966983</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">2</th>
+<td>IT</td>
+<td>SEARCH</td>
+<td>813.4</td>
+<td>725.00</td>
+<td>0.121931</td>
+<td>1.121931</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">1</th>
+<td>IT</td>
+<td>RT</td>
+<td>793.8</td>
+<td>819.00</td>
+<td>-0.030769</td>
+<td>0.969231</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">6</th>
+<td>RU</td>
+<td>DBM</td>
+<td>754.6</td>
+<td>731.25</td>
+<td>0.031932</td>
+<td>1.031932</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">9</th>
+<td>UK</td>
+<td>DBM</td>
+<td>548.8</td>
+<td>699.00</td>
+<td>-0.214878</td>
+<td>0.785122</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">12</th>
+<td>US</td>
+<td>DBM</td>
+<td>519.4</td>
+<td>794.25</td>
+<td>-0.346050</td>
+<td>0.653950</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">3</th>
+<td>NL</td>
+<td>DBM</td>
+<td>499.8</td>
+<td>492.50</td>
+<td>0.014822</td>
+<td>1.014822</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">0</th>
+<td>IT</td>
+<td>DBM</td>
+<td>343.0</td>
+<td>534.75</td>
+<td>-0.358579</td>
+<td>0.641421</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</section>
+<section id="step-6-create-heatmaps-of-roi-revenue-and-cost" class="level2">
+<h2 class="anchored" data-anchor-id="step-6-create-heatmaps-of-roi-revenue-and-cost">Step 6: Create heatmaps of ROI, Revenue and Cost</h2>
+<div id="b13e99ec" class="cell" data-execution_count="7">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>pivot <span class="op">=</span> summary.pivot(index<span class="op">=</span><span class="st">'country'</span>, columns<span class="op">=</span><span class="st">'campaign'</span>, values<span class="op">=</span><span class="st">'roi'</span>)</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>))</span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>sns.heatmap(pivot, annot<span class="op">=</span><span class="va">True</span>, fmt<span class="op">=</span><span class="st">".2%"</span>, cmap<span class="op">=</span><span class="st">'RdYlGn'</span>, center<span class="op">=</span><span class="dv">0</span>)</span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"ROI Heatmap by Country &amp; Campaign"</span>)</span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="wrike_take_home_files/figure-html/cell-10-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="8a19b059" class="cell" data-execution_count="8">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>pivot <span class="op">=</span> summary.pivot(index<span class="op">=</span><span class="st">'country'</span>, columns<span class="op">=</span><span class="st">'campaign'</span>, values<span class="op">=</span><span class="st">'revenue'</span>)</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>))</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>sns.heatmap(pivot, annot<span class="op">=</span><span class="va">True</span>, fmt<span class="op">=</span><span class="st">".2f"</span>, cmap<span class="op">=</span><span class="st">'Blues'</span>)</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Revenue Heatmap by Country &amp; Campaign"</span>)</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="wrike_take_home_files/figure-html/cell-11-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="5e368dfb" class="cell" data-execution_count="10">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>pivot <span class="op">=</span> summary.pivot(index<span class="op">=</span><span class="st">'country'</span>, columns<span class="op">=</span><span class="st">'campaign'</span>, values<span class="op">=</span><span class="st">'cost'</span>)</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>))</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>sns.heatmap(pivot, annot<span class="op">=</span><span class="va">True</span>, fmt<span class="op">=</span><span class="st">".2f"</span>, cmap<span class="op">=</span><span class="st">'Blues'</span>)</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">"Cost Heatmap by Country &amp; Campaign"</span>)</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="wrike_take_home_files/figure-html/cell-12-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
